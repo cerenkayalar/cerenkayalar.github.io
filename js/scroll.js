@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------------------
+ *  Smooth Scroller Script, version 1.0.2
+ *  (c) 2007 Dezinerfolio Inc. <midart@gmail.com>
+ *  Edited by @floorish
+ *
+ *  For details, please check the website : http://dezinerfolio.com/
+ *
+  --------------------------------------------------------------------------*/
+Scroller={speed:10,offset:0,gy:function(e){var o=e.offsetTop;if(e.offsetParent)for(;e=e.offsetParent;)o+=e.offsetTop;return o-this.offset},scrollTop:function(){var e=document.body,o=document.documentElement;return e&&e.scrollTop?e.scrollTop:o&&o.scrollTop?o.scrollTop:window.pageYOffset?window.pageYOffset:0},add:function(e,o,r){return e.addEventListener?e.addEventListener(o,r,!1):e.attachEvent?e.attachEvent("on"+o,r):void 0},end:function(e){return window.event?(window.event.cancelBubble=!0,void(window.event.returnValue=!1)):void(e.preventDefault&&e.stopPropagation&&(e.preventDefault(),e.stopPropagation()))},scroll:function(e){var o=window.innerHeight||document.documentElement.clientHeight,r=document.body.scrollHeight,t=Scroller.scrollTop();o>r-e&&(e=r-o);var n=(e-t)/Scroller.speed;n=e>t?Math.ceil(n):Math.floor(n),t+=n,window.scrollTo(0,t),Scroller.previousPos=t,(t==e||0==n)&&(clearInterval(Scroller.interval),Scroller.previousPos=!1)},init:function(){Scroller.add(window,"load",Scroller.render)},render:function(){Scroller.end(this);for(var e=document.getElementsByTagName("a"),o=0;o<e.length;o++){var r=e[o];!r.href||-1==r.href.indexOf("#")||r.href.indexOf("#")==r.href.length-1||r.pathname!=location.pathname&&"/"+r.pathname!=location.pathname||Scroller.add(r,"click",function(){Scroller.end(this);var o=this.getAttribute("href").split("#")[1],r=document.getElementById(o);if(!r)for(var t=0;t<e.length;t++)if(console.log("name",name),e[t].name==o){r=e[t];break}r&&(clearInterval(Scroller.interval),Scroller.interval=setInterval(function(){Scroller.scroll(Scroller.gy(r))},10))})}}},Scroller.init();

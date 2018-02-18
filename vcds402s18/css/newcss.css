@@ -1,0 +1,414 @@
+/*! Typebase.less v0.1.0 | MIT License */
+
+
+/* Setup */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+* {
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+
+html {
+  /* Change default typefaces here */
+  font-family: 'Source Serif Pro', Calibri, Arial, sans-serif;
+  /*font-size: 137.5%;*/
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 2.5% 2.5%;
+  overflow-x: hidden;
+}
+
+
+/* Copy & Lists */
+
+p {
+  line-height: 1.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.extra {
+  font-size: 2em;
+  max-width: 26em;
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul li, ol li {
+  line-height: 1.5rem;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Headings */
+
+.students, .us {
+  width: 33%;
+  display: inline-block;
+  margin-bottom: 4.5rem;
+  vertical-align: top
+}
+
+.us {
+  margin-left: 33%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Change heading typefaces here */
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+
+h1, h2 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  padding: 0em 0rem 2em;
+  /*margin-top: 3rem;*/
+  /*     background-color: #005DCC;
+   color: #f7be3e;
+    border-bottom: 2px solid #fff;*/
+}
+
+
+/*h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  /*  margin-top: 3rem;
+    border-bottom: 2px solid #fff;*/
+
+h3 {
+  font-size: 1.414rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.3535rem;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  padding: 1em;
+}
+
+
+/* Tables */
+
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  padding: 0;
+  /*line-height: 33px;*/
+}
+
+
+/* Code blocks */
+
+code {
+  vertical-align: bottom;
+}
+
+
+/* Leading paragraph text */
+
+.lead {
+  font-size: 1.414rem;
+}
+
+
+/* Hug the block above you */
+
+.hug {
+  margin-top: 0;
+}
+
+i {
+  font-weight: 400
+}
+
+a:link, a:visited, a {
+  color: black
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  margin: -0.5rem
+}
+
+#home {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#home>a {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  margin: 0rem;
+  display: inline-block
+}
+
+#home>a:hover {
+  color: white;
+  background-color: #444;
+}
+
+nav {
+  width: 100%;
+  display: table;
+}
+
+nav>a {
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 1rem 0.5rem;
+  display: table-cell;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #fff;
+  border-bottom: 1px solid #666;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav>a:link {
+  color: #000;
+}
+
+nav>a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.notes {
+  border-top: 1px solid #000;
+  border-bottom: 3px solid #000;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.7em
+}
+
+#homeHolder {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden
+}
+
+iframe {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    margin: 5px
+  }
+}
+
+
+/*
+#calendar>ul, #calendar>ul>li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul#dates>li {
+    width: 3.55%;
+    float: left
+}
+
+
+ul#dates>li>a, ul#weeks>li {
+    display: inline-block;
+    height: 35px;
+    background: #fff;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 0.7em;
+    vertical-align: middle;
+    padding-top: 15px;
+    text-decoration: none;
+}
+ul#dates>li>a{
+    width: 100%;
+}
+ul#weeks>li {
+    width: 6.8%;
+    float: left
+}
+
+ul#dates>li>a:hover {
+    background-color: #ff0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+}*/
+
+img {
+  max-width: 99%;
+}
+
+#calendar {
+  display: block;
+  clear: both;
+  margin: 1em 0 2em;
+}
+
+#calendar>table {
+  width: 100%;
+  font-size: 0.4em;
+  line-height: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#calendar>table>tbody>tr>td>a {
+  display: block;
+  text-decoration: none;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#calendar>table>tbody>tr>td>a:hover {
+  z-index: 10;
+  font-size: 3em;
+  line-height: 1em;
+  position: relative;
+  font-weight: 900;
+  background-color: #000
+}
+
+#weeks>td>a {
+  border-bottom: 2px solid #000000;
+  padding: 3px;
+  background-color: #fff
+}
+
+#days>td>a {
+  padding: 3px;
+  background-color: #fff
+}
+
+.we {
+  border-right: 1px dotted #000000
+}
+
+#days>td>a.pastClass {
+  color: #999999;
+  background-color: #ccc
+}
+
+#days>td>a.nextClass {
+  color: #EE1111
+}
+
+.goUp {
+  float: right;
+  margin-top: -1em;
+  font-size: 3em;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.goUp:hover {
+  margin-top: -1em;
+  padding-top: 0;
+}
+
+#s308f17p3 {
+  background-color: #E7425A;
+  color: #000;
+  /*color:#6FC6D2;*/
+}
+
+#s308f17p3 em {
+  color: #fff;
+  font-style: normal;
+}
+
+.full {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 2.5% -3%;
+  padding: 3%
+}
+
+.third {
+  min-height: 90vh;
+  margin: 2.5% -3%  0;
+  padding: 3% 3% 0 36%
+}
+
+.fullHeight {
+  height: 100vh;
+}
+
+.centered {
+  text-align: center
+}
+
+hr {
+  border: 2px solid #000;
+  max-width: 52em;
+}
+
+.floating {
+  float: left;
+  background-color: #000;
+  display: inline;
+  color: #E7425A;
+  font-family: "Source Sans Pro";
+  clear: both;
+  text-align: left;
+  margin: 0.5em 2em;
+  padding: 0.3em;
+  text-transform: uppercase;
+}
+
+.abs {
+  position: absolute;
+}
+
+.siema img{width:100%;max-width:100%}

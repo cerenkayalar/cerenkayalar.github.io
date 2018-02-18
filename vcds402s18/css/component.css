@@ -1,0 +1,54 @@
+/* Set all parents to full height */
+html, body {
+	height: 100%;
+}
+body {
+    overflow-x:hidden;
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50%
+(we don't know it's height so we can't use the negative margin trick) */
+nav {
+	position: fixed;
+	z-index: 9999;
+	right: 1.5vw;
+	top: 50%;
+	width: 1.5vw;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	outline: none;
+    text-indent: -9999px;
+}
+
+/* background-attachment does the trick */
+section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    overflow:hidden;
+    height:100%;
+}
+
+section {
+	background-attachment: fixed;
+}
+
+video#bgvid {
+    right: 0; bottom: 0;
+    min-width: 100%;
+    height:100%;
+    height:100vh;
+    width: auto;  z-index: -100;
+    background-color: black;
+    background-size: cover;
+}

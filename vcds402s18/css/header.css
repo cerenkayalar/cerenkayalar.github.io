@@ -1,0 +1,111 @@
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,400italic);
+
+html {
+  /* Change default typefaces here */
+  font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;
+  /*font-size: 137.5%;*/
+  -webkit-font-smoothing: antialiased;
+}
+body {margin:5% 33.3%;}
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+  background-color: #37D7FF;
+    color:#fff;
+  padding:0.3rem 0.5rem;
+    border-bottom: 2px solid #000;
+}
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid #000;
+}
+h3 {
+  font-size: 1.414rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem;
+}
+/* Hug the block above you */
+.hug {
+  margin-top: 0;
+}
+i{font-weight: 400}
+a:link,a:visited,a{color:black}
+a:hover{color:white;background-color: black;padding:0.5rem;margin:-0.5rem}
+
+#home{position:absolute;top:5px;left:5px;color:white;background-color:black;padding:0.5rem;margin:0rem}
+#home:hover{color:white;background-color:#444;}
+.notes{border-top:1px solid #000;border-bottom:3px solid #000;margin:1rem 0;padding:0.5rem 0;text-align:right;font-style: italic;font-size:0.7em}
+
+#homeHolder{margin:0 !important;padding:0 !important;overflow:hidden}
+iframe{border:0;margin:0;padding:0;min-height:100vh;min-width:100vw}
+
+@media only screen and (max-device-width: 480px) {
+    body{margin:5px}
+}
