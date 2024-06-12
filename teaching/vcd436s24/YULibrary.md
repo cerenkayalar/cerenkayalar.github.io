@@ -2,7 +2,7 @@
 
 Over the years I was teaching @YasarUni, I had the chance to access and order great books for the library. Design students interested in the fields of Interaction Design and Creative Computing/Coding will enjoy these resources. 
 
-*I'm updating the list regularly*
+**I'm updating the list regularly*
 
 	1.	050846|Microinteractions / Dan Saffer  [QA 76.9/.S24] 
  	2.	050003|Designing gestural interfaces / Dan Saffer  [QA 76.9/.S24] 
