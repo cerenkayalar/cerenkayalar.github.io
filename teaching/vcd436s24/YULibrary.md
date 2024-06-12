@@ -4,8 +4,14 @@ Over the years I was teaching @YasarUni, I had the chance to access and order gr
 
 *I'm updating the list regularly*
 
-	1.	050846|Microinteractions / Dan Saffer  [QA 76.9/.S24] 
-	2.	050003|Designing gestural interfaces / Dan Saffer  [QA 76.9/.S24] 
+1. fde
+2. fdsfd
+3. fdsfsd
+4. fds
+5. 
+
+1.	050846|Microinteractions / Dan Saffer  [QA 76.9/.S24] 
+2.	050003|Designing gestural interfaces / Dan Saffer  [QA 76.9/.S24] 
 	3.	046883|Designing for interaction : Creating innovative applications and devices / Dan Saffer  [QA 76.9/.S24] 
 	4.	051117|The user experience team of one : A research and design survival guide / Leah Buley  [QA 76.9/.B85] 
 	5.	042144|Thoughts on interaction design : a collection of reflections / Jon Kolko  [TS 171.4/.K55] 
